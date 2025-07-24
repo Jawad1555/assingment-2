@@ -1,11 +1,16 @@
-body{max-width: 1140px;
+header, main{max-width: 1140px;
 margin: 0 auto;}
 .navbar{
     display: flex;
     justify-content: space-between;
 }
 .font-style{color: #252432;
-font:bold;}
+font:bold;
+}
+.font-style2{color: #111111;
+font: 500px;
+
+}
 .nav-link{display: flex;
     text-decoration: none;
 }
@@ -20,6 +25,7 @@ list-style: none;
     width: 24px;
 }
 .font-clr{color: #E95A08;}
+
 .banner{display: flex;
 margin-top: 120px;
 width: 100%;}
@@ -29,6 +35,8 @@ width: 100%;}
 }
 .font-p-clr{color: rgba(0, 0, 0, 0.5);}
 
+
+
 .contaner-title{
 
 font-size: 4.06rem;}
@@ -36,8 +44,27 @@ font-size: 4.06rem;}
 .plant{text-align: center;
 margin-top: 120px;}
 .plant h3{font-size: 3.125rem;}
+
+.shop-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.shop{text-align: center;
+font-size: 1.375rem;}
+
+.btn{background-color: #E95A08;
+    color:#FFFFFF;
+    width: 270px;
+    height: 50px;
+border: none;
+   
+}
+
+
+
 @media screen and (max-width: 576px) {
-    body{max-width: 576px;}
+    body{width: 576px;
+    margin: 0 auto;}
  .nav-iteam{display: flex;}
 .navbar{
     justify-content: space-between;
@@ -56,10 +83,15 @@ margin-top: -120px;}
 .font-size{font-size: 0.875rem;}
 .container{margin: 28px 16px;
 height: 148px;}
-
-.plant{margin: 64px 16px;}
-
-
+.plant{margin-top: 64px;}
+.plant h3{margin: 30px 16px;
+}
+.shop{width: 270px;
+height: 490px;
+margin-right: 10px;
+}
+.shop-item{grid-template-columns: repeat(2, 1fr);
+   margin: 28px 14px; }
 
 
 
